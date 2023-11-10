@@ -1,7 +1,6 @@
 import AcmeLogo from "@/app/ui/acme-logo";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import styles from "@/app/ui/home.module.css";
-import Image from "next/image";
 
 import Link from "next/link";
 import { lusitana } from "./ui/fonts";
@@ -30,20 +29,6 @@ export default function Page() {
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
         </div>
-        <Image
-          src={"/hero-desktop.png"}
-          width={1000}
-          height={760}
-          className="hidden md:block"
-          alt="Screenshots of the dashboard project showing desktop and mobile versions"
-        />
-        <Image
-          src={"/hero-mobile.png"}
-          width={560}
-          height={620}
-          className="block md:hidden"
-          alt="Screenshots of the dashboard project showing desktop and mobile versions"
-        />
       </div>
       <div className={styles.shape} />
     </main>
